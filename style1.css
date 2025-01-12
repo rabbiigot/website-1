@@ -1,0 +1,656 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .6s;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    padding: 1vh 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 1px 10px 0 black;
+    
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background: black;
+    margin-top: 100px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bestSellersFooter {
+    position: fixed;
+    margin-top: 18vh;
+}
+
+.footer1 a{
+    margin: 10px 100px;
+    display: block;
+    left: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.footer2 a{
+    margin: 10px 100px;
+    display: block;
+    left: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.footer1 i{
+    font-size: 25px;
+}
+
+.footer2 i{
+    font-size: 25px;
+}
+
+.nav-cont h3{
+    font-size: 2vh;
+    font-weight: 100;
+    margin-top: 2vh;
+}
+
+.nav-cont h1{
+    font-size: 4vh;
+    font-weight: 800;
+    margin-top: 2vh;
+    margin-right: 40vh;
+}
+
+.home-text{
+    margin-top: 30vh;
+    position: absolute;
+    z-index: 100;
+}
+
+.home-text h1{
+    font-size: 8vh;
+    margin-left: 5vh;
+    font-weight: 1000;
+    width: 100%;
+}
+
+.home-text h2{
+    font-size: 4vh;
+    margin-left: 70vh;
+    width: 100%;
+    font-weight: 700;
+}
+.home-text h6{
+    font-size: 3vh;
+    margin-left: 5vh;
+    font-weight: 500;
+}
+
+.home-text p{
+    margin: 1%;
+    margin-left: 70vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2vh;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: content-box;
+    margin-left: 70vh;
+    margin-top: 10px;
+    color: white;
+    padding: 5px 15px;
+    border: solid black;
+    background-color: black;
+    border-radius: 5px;
+    transition: .3s;
+    width: 16vh;
+}
+
+.btn h3{
+    font-size: 2.5vh;
+}
+
+.btn:hover{
+    color: black;
+    border: solid rgb(255, 200, 0);
+    background-color: rgb(255, 200, 0);
+    transition: .3s;
+    transform: translateY(-2px);
+}
+
+.nav-cont{
+    display: flex;
+    padding: 5px;
+}
+
+.nav-logo a{
+    text-transform: uppercase;
+    margin-right: 280px;
+    color: black;
+    font-size: 2vh;
+    font-weight: 800;
+}
+
+.nav-op a{
+    display: inline-block;
+    margin-top: 2vh;
+    margin-right: 50px;
+    color: black;
+}
+
+.nav-op a:hover{
+    transform: translateY(2px);
+    color: gray;
+}
+.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.content-1 {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    width: 135%; 
+    height: 100%;
+    clip-path: polygon(0 0, 45% 0, 52% 100%, 0 100%);
+    background: black;
+}
+
+.home-background img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content-2{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+.carousel-container {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carousel{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.carousel input{
+    display: none;
+}
+
+ .carousel-item{
+    width: 20%;
+    transition: 2s;
+ }
+
+ .carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-manual{
+    position: absolute;
+    width: 100vh;
+    margin-top: 95vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 3vh;
+}
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+
+#radio1:checked ~.active {
+    margin-left: 0;
+}
+#radio2:checked ~.active {
+    margin-left: -20%;
+}
+#radio3:checked ~.active {
+    margin-left: -40%;
+}
+
+.nav-auto{
+    position: absolute;
+    width: 100vh;
+    margin-top: 95vh;
+    display: flex;
+    margin-left: 3vh;
+    justify-content: center;
+
+}
+
+.nav-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 20px;
+    justify-content: center;    
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: white;
+}
+
+/* product CSS */
+.text-product h1{
+    margin-top: 15vh;
+    margin-left: 30vh;
+}
+
+.shirt-container img{
+    height: 200px;
+    margin: 20px;
+    width: 200px;
+}
+
+.shirt-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    margin-left: 30vh;
+    margin-right: 30vh;
+    margin-top: 5vh;
+    text-align: center;
+    z-index: 0;
+}
+
+.icon-button1 {
+    display: inline-block;
+    border: solid rgb(255, 200, 0);
+    background: rgb(255, 200, 0);
+    color: black;
+    padding: 10px 10px 0px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.icon-button2 {
+    display: inline-block;
+    border: solid rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 10px 0px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.icon-button1 h5{
+    font-weight: 100;
+}
+
+.icon-button2 h5{
+    font-weight: 100;
+}
+
+.icon-button1:hover{
+    color: black;
+    transition: .1s;
+    background: rgb(255, 255, 255);
+    border: solid black;
+}
+
+.icon-button2:hover{
+    color: black;
+    transition: .1s;
+    background: rgb(255, 255, 255);
+    border: solid black;
+}
+
+.icon-button1 i{
+    transition: .2s;
+}
+
+.icon-button2 i{
+    transition: .2s;
+}
+
+.icon-button1 i:hover{
+    transition: .2s;
+}
+
+.icon-button2 i:hover{
+    transition: .2s;
+}
+
+.shirt-container h5{
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+/* modal CSS */
+.modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+.modal-content{
+    margin-top: 20vh;
+    height: 500px;
+    width: 1000px;
+    margin-left: 33vh;
+    margin-right: 30vh;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.voucherModal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.479);
+    z-index: 1;
+    display: none;
+    top:0;
+    left:0;
+    overflow: auto;
+}
+
+.voucher-content{
+    text-align: center;
+    width: 500px;
+    position: fixed;
+    margin-left: 35%;
+    display: block;
+    color: black;
+    background: white;
+    margin-top: 300px;
+    height: 90px;
+}
+
+.voucher-content h5 {
+    font-size: 15px;
+    padding: 5px;
+    border: solid 1px black;
+    margin: 0 15px;
+    font-weight: 100;
+    display: block;
+    width: 300px;
+}
+
+.closeVoucher{
+    display: flex;
+    justify-content: right;
+    padding: 3px 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.voucher-content button{
+    position: relative;
+    left: 140px;
+    top: -30px;
+    padding: 7px 15px;
+    text-decoration: none;
+    background:rgba(0, 0, 0, 0.356);
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.voucher-content button:hover{
+    color: white;
+    background: rgb(5, 114, 156);
+    transition: .1s;
+}
+
+.textModal h1{
+    float: left;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.textModal p{
+    float: left;
+    text-align: left;
+    margin-right: 20px;
+}
+
+
+.textModal h5{
+    float: left;
+    margin-top: 50px;
+    margin-right: 20px;
+    background:rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#price-item h3{
+    float: left;
+    margin-top: 150px;
+    font-size: 16px;
+}
+
+.textModal h5:hover{
+    background: rgb(255, 200, 0);
+    color: black;
+}
+
+
+.img-modal img{
+    height: 400px;
+    width: 400px;
+    margin: 45px;
+    float:left;
+    padding: 20px;
+    border: solid 1px black;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 40px;
+    float: right;
+    padding-right: 13px;
+}
+
+.placeholder h1{
+    font-weight: 800;
+    margin: 313px;
+    text-align: center;
+}
+
+.para{
+    padding-left: 20px;
+    padding-right: 250px;
+}
+
+.modalBtn{
+    float: left;
+    display: flex;
+    margin-left: 240px;
+    margin-top: 10px;
+}
+
+.cancel p{
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+    background: grey;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addCart p{
+    margin: 10px;
+    background:rgb(255, 200, 0);
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.cancel p:hover{
+    background: rgb(80, 79, 79);
+    color: white;
+}
+
+.addCart p:hover{
+    background: rgb(8, 131, 29);
+    color: white;
+    transition: .3s;
+}
+
+/* best Sellers */
+.rating{
+    margin: 5px;
+    color: orange;
+}
+
+/* about content */
+.aboutContainer{
+    margin-top: 125px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-content: center;
+    text-align: center;
+}
+
+.cardInfo1{
+    position: relative;
+    margin: 20px;
+    background: rgb(235, 235, 235);
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 1px grey;
+}
+
+.cardInfo2{
+    position: relative;
+    background: rgb(235, 235, 235);
+    height: 400px;
+    margin: 20px;
+    width: 400px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 1px grey;
+}
+
+.cardInfo3{
+    position: relative;
+    background: rgb(235, 235, 235);
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 1px grey;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content:'';
+    position: absolute;
+    background-color: black;
+    right: 0;
+    bottom: -40px;
+    height:40px;
+    width: 40px;
+}
+
+.overlay::after{
+    content:'';
+    position: absolute;
+    background-color: rgb(235, 235, 235);
+    right: 0px;
+    bottom: -40px;
+    height:40px;
+    width: 40px;
+    border-radius: 0 25px 0 0;
+}
+
+.content1 h4{
+    margin-top: 30px;
+    font-weight: 100;
+    position: relative;
+    color: white;
+    padding: 30px;
+}
+.content2 h4{
+    margin-top: 70px;
+    font-weight: 100;
+    position: relative;
+    padding: 30px;
+}

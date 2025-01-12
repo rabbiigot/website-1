@@ -1,0 +1,54 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family:"Poppins", sans-serif;
+}
+
+body{
+    background: white;
+    color: black;
+}
+
+header{
+    position: fixed;
+    padding: 20px;
+    top:0;
+    right:0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 0 5px 0 black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: all .6s;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    transition: all .6s;
+}
+
+.navlist a:hover{
+    transform: translateY(2px) scale(1.05);
+    color: gray;
+}
+
